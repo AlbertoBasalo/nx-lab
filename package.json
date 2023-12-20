@@ -8,6 +8,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "lint": "nx run-many --target=lint --all",
     "start": "nx serve activity-bookings"
   },
   "private": true,

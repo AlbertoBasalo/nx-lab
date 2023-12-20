@@ -6,6 +6,7 @@ import {
 } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { AuthService } from '@lab/auth';
+import { LoggerService } from '@lab/log';
 
 @Component({
   selector: 'lab-header',
@@ -35,7 +36,12 @@ import { AuthService } from '@lab/auth';
 })
 export class HeaderComponent {
   readonly #authService = inject(AuthService);
+
   @Input({ required: true }) title!: string;
   homeLink = { path: '', label: 'Home' };
   userName = this.#authService.getUserName();
+
+  constructor(logger: LoggerService) {
+    logger.log('Starting HeaderComponent');
+  }
 }

@@ -82,23 +82,6 @@ nx g @nx/jest:configuration --project=services
 
 ```
 
-## NPM Scripts
-
-```json
-"scripts": {
-  "lint": "nx run-many --target=lint --all",
-  "format": "nx run-many --target=format:write --all",
-  "migrate": "nx migrate latest",
-  "start": "nx serve activity-bookings",
-  "test": "nx run-many --target=test --all",
-  "test:e2e": "nx e2e activity-bookings",
-  "watch": "nx e2e activity-bookings --headed --watch",
-  "watch:domain": "nx test domain --watch",
-  "watch:services": "nx test services",
-  "watch:ui": "nx component-test ui --headed --watch"
-},
-```
-
 ## Module boundaries
 
 EsLint JSON configuration
@@ -146,4 +129,21 @@ EsLint JSON configuration
         ]
       }
 }
+```
+
+## NPM Scripts
+
+```json
+"scripts": {
+  "lint": "nx run-many --target=lint --all",
+  "format": "nx run-many --target=format:write --all",
+  "migrate": "nx migrate latest",
+  "start": "nx serve activity-bookings",
+  "test": "nx run-many --target=test --all",
+  "test:e2e": "nx e2e activity-bookings",
+  "watch": "nx e2e activity-bookings --headed --watch",
+  "watch:domain": "nx test domain --watch",
+  "watch:services": "nx test services",
+  "watch:ui": "nx component-test ui --headed --watch"
+},
 ```
