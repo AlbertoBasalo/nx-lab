@@ -18,15 +18,6 @@ npx nx g @nx/angular:app activity-bookings --bundler=esbuild --e2eTestRunner=non
 
 ```
 
-Scripts
-
-```json
- "scripts": {
-    "start": "nx serve activity-bookings",
-    "watch": "nx e2e activity-bookings --headed --browser=chrome"
-}
-```
-
 ## Core library
 
 ```bash
