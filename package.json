@@ -9,8 +9,8 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
-  "dependencies": {},
   "devDependencies": {
+    "@nx/angular": "^17.2.6",
     "@nx/js": "17.2.6",
     "@nx/workspace": "17.2.6",
     "nx": "17.2.6"
