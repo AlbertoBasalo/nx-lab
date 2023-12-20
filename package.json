@@ -9,7 +9,9 @@
   "license": "MIT",
   "scripts": {
     "lint": "nx run-many --target=lint --all",
-    "start": "nx serve activity-bookings"
+    "start": "nx serve activity-bookings",
+    "test:e2e": "nx e2e activity-bookings",
+    "watch": "nx e2e activity-bookings --headed --watch"
   },
   "private": true,
   "devDependencies": {
@@ -23,6 +25,7 @@
     "@angular/compiler-cli": "~17.0.0",
     "@angular/language-service": "~17.0.0",
     "@nx/angular": "^17.2.6",
+    "@nx/cypress": "17.2.6",
     "@nx/esbuild": "17.2.6",
     "@nx/eslint": "17.2.6",
     "@nx/eslint-plugin": "17.2.6",
@@ -35,13 +38,16 @@
     "@types/node": "18.7.1",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
     "@typescript-eslint/parser": "^6.9.1",
+    "cypress": "^13.0.0",
     "esbuild": "^0.19.2",
     "eslint": "~8.48.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-cypress": "^2.13.4",
     "jsonc-eslint-parser": "^2.1.0",
     "nx": "17.2.6",
     "prettier": "^2.6.2",
-    "typescript": "~5.2.2"
+    "typescript": "~5.2.2",
+    "vite": "^5.0.0"
   },
   "dependencies": {
     "@angular/animations": "~17.0.0",
