@@ -23,14 +23,10 @@ Find detailed journal of instructions in [CLI.md](./docs/CLI.md)
 
 Have an outlook of the project folders structure
 
-![Folders](./docs/screenshots/folders.png)
+<!-- ![Folders](./docs/screenshots/folders.png) -->
 
 > [!TIP]
-> Companion article:
-
-- [English version](https://medium.com/@albertobasalo/file-and-folder-structure-for-angular-applications-3130efc582e3)
-
-- [Versión en Español](https://www.linkedin.com/pulse/estructura-de-archivos-y-carpetas-para-aplicaciones-angular-basalo-3vcff)
+> Companion article (... wait until 231223)
 
 ## Testing
 
