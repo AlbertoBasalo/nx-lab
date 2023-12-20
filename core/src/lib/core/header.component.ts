@@ -11,7 +11,7 @@ import { RouterLink } from '@angular/router';
         <a [routerLink]="homeLink.path">{{ homeLink.label }}</a>
         <ul>
           <li>
-            <a [routerLink]="['']">One route</a>
+            <a [routerLink]="['user']">User</a>
           </li>
         </ul>
       </nav>

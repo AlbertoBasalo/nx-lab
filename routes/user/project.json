@@ -1,0 +1,14 @@
+{
+  "name": "user",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "routes/user/src",
+  "prefix": "lab",
+  "tags": ["type:feat", "scope:user"],
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  }
+}

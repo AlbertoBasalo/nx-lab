@@ -34,12 +34,12 @@ nx g @nx/angular:component --name=header --changeDetection=OnPush --inlineStyle=
 # Generate Routed libraries
 # Home
 npx nx g @nx/angular:library routes/home -c=OnPush --importPath=@lab/home --lazy=true -p=lab --projectNameAndRootFormat=as-provided --routing=true -s --skipTests --style=css --unitTestRunner=none -t --tags=type:feat,scope:home
+# User
+npx nx g @nx/angular:library routes/user -c=OnPush --importPath=@lab/user --lazy=true -p=lab --projectNameAndRootFormat=as-provided --routing=true -s --skipTests --style=css --unitTestRunner=none -t --tags=type:feat,scope:user
 # Activities
 npx nx g @nx/angular:library routes/activities -c=OnPush --importPath=@lab/activities --lazy=true -p=lab --projectNameAndRootFormat=as-provided --routing=true -s --skipTests --style=css --unitTestRunner=none -t --tags=type:feat,scope:activities
 # Bookings
 npx nx g @nx/angular:library routes/bookings -c=OnPush --importPath=@lab/bookings --lazy=true -p=lab --projectNameAndRootFormat=as-provided --routing=true -s --skipTests --style=css --unitTestRunner=none -t --tags=type:feat,scope:bookings
-# User
-npx nx g @nx/angular:library routes/user -c=OnPush --importPath=@lab/user --lazy=true -p=lab --projectNameAndRootFormat=as-provided --routing=true -s --skipTests --style=css --unitTestRunner=none -t --tags=type:feat,scope:user
 ```
 
 ## Shared libraries

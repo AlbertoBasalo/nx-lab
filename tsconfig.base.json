@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@lab/core": ["core/src/index.ts"],
-      "@lab/home": ["routes/home/src/index.ts"]
+      "@lab/home": ["routes/home/src/index.ts"],
+      "@lab/user": ["routes/user/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
