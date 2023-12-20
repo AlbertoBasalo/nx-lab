@@ -1,6 +1,11 @@
 {
   "name": "@nx-lab/source",
-  "version": "0.0.0",
+  "version": "17.0.0",
+  "description": "Sample code for Angular 17 large development courses",
+  "author": {
+    "name": "Alberto Basalo",
+    "url": "https://albertobasalo.dev"
+  },
   "license": "MIT",
   "scripts": {},
   "private": true,
