@@ -1,6 +1,6 @@
 {
   "name": "@nx-lab/source",
-  "version": "17.0.0",
+  "version": "17.1.0",
   "description": "Sample code for Angular 17 large development courses",
   "author": {
     "name": "Alberto Basalo",
@@ -9,6 +9,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "nx run-many --target=lint --all",
+    "release": "standard-version && git push --follow-tags origin main",
     "start": "nx serve activity-bookings",
     "test": "nx run-many --target=test --all",
     "test:e2e": "nx e2e activity-bookings",
@@ -56,6 +57,7 @@
     "jsonc-eslint-parser": "^2.1.0",
     "nx": "17.2.6",
     "prettier": "^2.6.2",
+    "standard-version": "^9.5.0",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
     "typescript": "~5.2.2",
