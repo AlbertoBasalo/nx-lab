@@ -21,6 +21,8 @@
       "@lab/core": ["core/src/index.ts"],
       "@lab/home": ["routes/home/src/index.ts"],
       "@lab/log": ["shared/log/src/index.ts"],
+      "@lab/services": ["shared/services/src/index.ts"],
+      "@lab/ui": ["shared/ui/src/index.ts"],
       "@lab/user": ["routes/user/src/index.ts"]
     }
   },
