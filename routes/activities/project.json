@@ -1,0 +1,14 @@
+{
+  "name": "activities",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "routes/activities/src",
+  "prefix": "lab",
+  "tags": ["type:feat", "scope:activities"],
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  }
+}

@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@lab/activities": ["routes/activities/src/index.ts"],
       "@lab/auth": ["shared/auth/src/index.ts"],
+      "@lab/bookings": ["routes/bookings/src/index.ts"],
       "@lab/core": ["core/src/index.ts"],
       "@lab/home": ["routes/home/src/index.ts"],
       "@lab/user": ["routes/user/src/index.ts"]

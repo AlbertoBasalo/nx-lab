@@ -19,6 +19,12 @@ import { AuthService } from '@lab/auth';
           <li>
             <a [routerLink]="['user']">{{ userName }}</a>
           </li>
+          <li>
+            <a [routerLink]="['activities']">Activities</a>
+          </li>
+          <li>
+            <a [routerLink]="['bookings']">Bookings</a>
+          </li>
         </ul>
       </nav>
       <h1>{{ title }}</h1>

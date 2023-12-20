@@ -9,4 +9,13 @@ export const appRoutes: Route[] = [
     path: 'user',
     loadChildren: () => import('@lab/user').then((m) => m.userRoutes),
   },
+  {
+    path: 'activities',
+    loadChildren: () =>
+      import('@lab/activities').then((m) => m.activitiesRoutes),
+  },
+  {
+    path: 'bookings',
+    loadChildren: () => import('@lab/bookings').then((m) => m.bookingsRoutes),
+  },
 ];

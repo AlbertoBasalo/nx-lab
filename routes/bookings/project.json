@@ -1,0 +1,14 @@
+{
+  "name": "bookings",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "routes/bookings/src",
+  "prefix": "lab",
+  "tags": ["type:feat", "scope:bookings"],
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  }
+}
