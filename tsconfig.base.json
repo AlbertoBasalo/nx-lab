@@ -19,6 +19,7 @@
       "@lab/auth": ["shared/auth/src/index.ts"],
       "@lab/bookings": ["routes/bookings/src/index.ts"],
       "@lab/core": ["core/src/index.ts"],
+      "@lab/domain": ["shared/domain/src/index.ts"],
       "@lab/home": ["routes/home/src/index.ts"],
       "@lab/log": ["shared/log/src/index.ts"],
       "@lab/services": ["shared/services/src/index.ts"],
