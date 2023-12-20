@@ -48,10 +48,11 @@ npx nx g @nx/angular:library routes/bookings -c=OnPush --importPath=@lab/booking
 # Generate Shared libraries
 # auth
 npx nx g @nx/angular:library shared/auth -c=OnPush --importPath=@lab/auth -p=lab --projectNameAndRootFormat=as-provided -s --skipTests --style=css --unitTestRunner=none -t --tags=type:services,scope:shared
-nx g @schematics/angular:service --name=auth --skipTests=true
+npx nx g @schematics/angular:service auth --project=auth --skipTests=true
 
 # log
 npx nx g @nx/angular:library shared/log --importPath=@lab/log -p=lab --projectNameAndRootFormat=as-provided -s --skipTests --style=css --unitTestRunner=none -t --tags=type:services,scope:shared
+npx nx g @schematics/angular:service logger --project=log --skipTests=true
 
 # ui
 npx nx g @nx/angular:library shared/ui -c=OnPush --importPath=@lab/ui -p=lab --projectNameAndRootFormat=as-provided -s --skipTests --style=css --unitTestRunner=none -t --tags=type:ui,scope:shared

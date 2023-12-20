@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from '@lab/core';
+import { LoggerService } from '@lab/log';
 
 @Component({
   standalone: true,
@@ -14,4 +15,8 @@ import { HeaderComponent } from '@lab/core';
 })
 export class AppComponent {
   title = 'activity-bookings';
+
+  constructor(logger: LoggerService) {
+    logger.log('Application started');
+  }
 }
