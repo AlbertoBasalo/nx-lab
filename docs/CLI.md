@@ -147,3 +147,11 @@ EsLint JSON configuration
   "watch:ui": "nx component-test ui --headed --watch"
 },
 ```
+
+## Extras
+
+```bash
+# Release
+npm i -D standard-version
+# "release": "standard-version && git push --follow-tags origin main"
+```
