@@ -11,7 +11,8 @@
     "lint": "nx run-many --target=lint --all",
     "start": "nx serve activity-bookings",
     "test:e2e": "nx e2e activity-bookings",
-    "watch": "nx e2e activity-bookings --headed --watch"
+    "watch": "nx e2e activity-bookings --headed --watch",
+    "watch:ui": "nx component-test ui --headed --watch"
   },
   "private": true,
   "devDependencies": {
@@ -24,6 +25,7 @@
     "@angular/cli": "~17.0.0",
     "@angular/compiler-cli": "~17.0.0",
     "@angular/language-service": "~17.0.0",
+    "@cypress/webpack-dev-server": "^2.0.0",
     "@nx/angular": "^17.2.6",
     "@nx/cypress": "17.2.6",
     "@nx/esbuild": "17.2.6",
@@ -43,6 +45,7 @@
     "eslint": "~8.48.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-cypress": "^2.13.4",
+    "html-webpack-plugin": "^5.5.0",
     "jsonc-eslint-parser": "^2.1.0",
     "nx": "17.2.6",
     "prettier": "^2.6.2",

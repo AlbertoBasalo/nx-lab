@@ -18,6 +18,10 @@
     "e2e": {
       "cache": true,
       "inputs": ["default", "^production"]
+    },
+    "component-test": {
+      "cache": true,
+      "inputs": ["default", "^production"]
     }
   },
   "namedInputs": {
