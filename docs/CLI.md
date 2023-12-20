@@ -46,15 +46,17 @@ npx nx g @nx/angular:library routes/bookings -c=OnPush --importPath=@lab/booking
 
 ```bash
 # Generate Shared libraries
-# ui
-npx nx g @nx/angular:library shared/ui -c=OnPush --importPath=@lab/ui -p=lab --projectNameAndRootFormat=as-provided -s --skipTests --style=css --unitTestRunner=none -t --tags=type:ui,scope:shared
-
-# services
-npx nx g @nx/angular:library shared/services -c=OnPush --importPath=@lab/services -p=lab --projectNameAndRootFormat=as-provided -s --style=css --unitTestRunner=none -t --tags=type:services,scope:shared
-# log
-npx nx g @nx/angular:library shared/log --importPath=@lab/log -p=lab --projectNameAndRootFormat=as-provided -s --skipTests --style=css --unitTestRunner=none -t --tags=type:services,scope:shared
 # auth
 npx nx g @nx/angular:library shared/auth -c=OnPush --importPath=@lab/auth -p=lab --projectNameAndRootFormat=as-provided -s --skipTests --style=css --unitTestRunner=none -t --tags=type:services,scope:shared
+nx g @schematics/angular:service --name=auth --skipTests=true
+
+# log
+npx nx g @nx/angular:library shared/log --importPath=@lab/log -p=lab --projectNameAndRootFormat=as-provided -s --skipTests --style=css --unitTestRunner=none -t --tags=type:services,scope:shared
+
+# ui
+npx nx g @nx/angular:library shared/ui -c=OnPush --importPath=@lab/ui -p=lab --projectNameAndRootFormat=as-provided -s --skipTests --style=css --unitTestRunner=none -t --tags=type:ui,scope:shared
+# services
+npx nx g @nx/angular:library shared/services -c=OnPush --importPath=@lab/services -p=lab --projectNameAndRootFormat=as-provided -s --style=css --unitTestRunner=none -t --tags=type:services,scope:shared
 # domain
 npx nx g @nx/js:lib shared/domain --bundler=esbuild --importPath=@lab/domain --projectNameAndRootFormat=as-provided --unitTestRunner=none --tags=type:domain,scope:shared
 ```

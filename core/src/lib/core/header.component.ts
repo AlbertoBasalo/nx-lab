@@ -1,5 +1,11 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  Input,
+  inject,
+} from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { AuthService } from '@lab/auth';
 
 @Component({
   selector: 'lab-header',
@@ -11,7 +17,7 @@ import { RouterLink } from '@angular/router';
         <a [routerLink]="homeLink.path">{{ homeLink.label }}</a>
         <ul>
           <li>
-            <a [routerLink]="['user']">User</a>
+            <a [routerLink]="['user']">{{ userName }}</a>
           </li>
         </ul>
       </nav>
@@ -22,6 +28,8 @@ import { RouterLink } from '@angular/router';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
+  readonly #authService = inject(AuthService);
   @Input({ required: true }) title!: string;
-  homeLink = { path: 'home', label: 'Home' };
+  homeLink = { path: '', label: 'Home' };
+  userName = this.#authService.getUserName();
 }

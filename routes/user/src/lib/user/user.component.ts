@@ -1,12 +1,16 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { AuthService } from '@lab/auth';
 
 @Component({
   selector: 'lab-user',
   standalone: true,
   imports: [CommonModule],
-  template: `<p>user works!</p>`,
+  template: `<p>Hello {{ userName }}</p>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class UserComponent {}
+export class UserComponent {
+  readonly #authService = inject(AuthService);
+  userName = this.#authService.getUserName();
+}
