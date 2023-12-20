@@ -39,7 +39,7 @@ export class HeaderComponent {
 
   @Input({ required: true }) title!: string;
   homeLink = { path: '', label: 'Home' };
-  userName = this.#authService.getUserName();
+  userName = this.#authService.getUser().username;
 
   constructor(logger: LoggerService) {
     logger.log('Starting HeaderComponent');

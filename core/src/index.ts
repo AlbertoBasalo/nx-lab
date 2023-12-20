@@ -1,2 +1,2 @@
-export * from './lib/core/header.component';
-export * from './lib/core/logger.provider';
+export * from './lib/header.component';
+export * from './lib/logger.provider';

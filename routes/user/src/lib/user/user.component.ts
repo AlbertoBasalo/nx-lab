@@ -12,5 +12,5 @@ import { AuthService } from '@lab/auth';
 })
 export class UserComponent {
   readonly #authService = inject(AuthService);
-  userName = this.#authService.getUserName();
+  userName = this.#authService.getUser().username;
 }
