@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@lab/core": ["core/src/index.ts"]
+      "@lab/core": ["core/src/index.ts"],
+      "@lab/home": ["routes/home/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
