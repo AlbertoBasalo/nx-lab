@@ -73,8 +73,8 @@ npx nx g @nx/cypress:configuration --bundler=vite --devServerTarget=activity-boo
 npx nx g @nx/angular:cypress-component-configuration --project=ui --buildTarget=activity-bookings:build:development --generateTests
 
 # Unit testing with jest for domain and services libraries
-nx g @nx/jest:configuration --project=domain
-nx g @nx/jest:configuration --project=services
+npx nx g @nx/jest:configuration --project=domain
+npx nx g @nx/jest:configuration --project=services
 
 
 # Feat testing (core + routed) libs
