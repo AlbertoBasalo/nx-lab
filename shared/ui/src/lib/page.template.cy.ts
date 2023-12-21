@@ -11,11 +11,19 @@ describe(PageTemplate.name, () => {
     });
   });
 
-  it('renders', () => {
+  it('renders with Title property', () => {
     cy.mount(PageTemplate, {
       componentProperties: {
-        title: '',
+        title: 'The title',
       },
     });
+    cy.title().should('equal', 'The title');
+  });
+
+  it('renders an included subtitle content', () => {
+    cy.mount(`<lab-page><div class="subtitle">The subtitle</div></lab-page>`, {
+      imports: [PageTemplate],
+    });
+    cy.contains('The subtitle');
   });
 });
