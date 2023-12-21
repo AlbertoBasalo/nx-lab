@@ -11,6 +11,8 @@ import { LoggerService } from '@lab/log';
 @Component({
   selector: 'lab-header',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  styles: ``,
   imports: [RouterLink],
   template: `
     <header>
@@ -31,8 +33,6 @@ import { LoggerService } from '@lab/log';
       <h1>{{ title }}</h1>
     </header>
   `,
-  styles: ``,
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
   readonly #authService = inject(AuthService);

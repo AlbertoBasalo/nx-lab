@@ -19,7 +19,10 @@
           "activity-bookings/src/favicon.ico",
           "activity-bookings/src/assets"
         ],
-        "styles": ["activity-bookings/src/styles.css"],
+        "styles": [
+          "node_modules/@picocss/pico/css/pico.min.css",
+          "activity-bookings/src/styles.css"
+        ],
         "scripts": [],
         "server": "activity-bookings/src/main.server.ts",
         "prerender": true,

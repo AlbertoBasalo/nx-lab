@@ -25,7 +25,8 @@ npx nx g @nx/angular:app activity-bookings --bundler=esbuild --e2eTestRunner=non
 npx nx g @nx/angular:library core -c=OnPush --importPath=@lab/core -p=lab -s --skipTests --style=css --unitTestRunner=none -t --tags=type:feat,scope:core
 
 # Generate Core components
-nx g @nx/angular:component --name=header --changeDetection=OnPush --inlineStyle=true --inlineTemplate=true --nameAndDirectoryFormat=as-provided --prefix=lab --skipTests=true
+npx nx g @nx/angular:component header --directory=core/src/lib --prefix=lab
+npx nx g @nx/angular:component footer --directory=core/src/lib --prefix=lab
 ```
 
 ## Routed libraries
