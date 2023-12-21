@@ -1,1 +1,1 @@
-// ToDo: add some reusable services here
+export * from './lib/platform.service';

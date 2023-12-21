@@ -72,6 +72,9 @@
       "inlineTemplate": true,
       "skipTests": true,
       "style": "none"
+    },
+    "@nx/angular:service": {
+      "flat": true
     }
   }
 }
