@@ -23,7 +23,7 @@ Find detailed journal of instructions in [CLI.md](./docs/CLI.md)
 
 Have an outlook of the project folders structure
 
-<!-- ![Folders](./docs/screenshots/folders.png) -->
+![Folders](./docs/screenshots/folders.png)
 
 > [!TIP]
 > Companion article (... wait until 231223)
