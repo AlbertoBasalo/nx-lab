@@ -3,8 +3,6 @@
 > CLI commands and configuration
 
 ## Main application
-> [!NOTE]
-> Empty repository with Angular
 
 ```bash
 # Create an empty repository [nx-lab]
