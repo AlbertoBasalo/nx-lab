@@ -12,7 +12,7 @@ import {
   MIN_LOG_LEVEL,
 } from '@lab/log';
 
-export const provideInstrumentation = (withMinLogLevel: WithMinLogLevel) => {
+export const provideInstrumentation = (minLogLevel: MinLogLevelProvider) => {
   const providers: Provider[] = [
     {
       provide: COLLECTOR,
@@ -23,20 +23,22 @@ export const provideInstrumentation = (withMinLogLevel: WithMinLogLevel) => {
       useClass: BasicLoggerService,
     },
   ];
-  if (withMinLogLevel) {
-    providers.push(withMinLogLevel());
+  if (minLogLevel) {
+    providers.push(minLogLevel);
   }
   return makeEnvironmentProviders(providers);
 };
 
-type WithMinLogLevel = () => {
+type MinLogLevelProvider = {
   provide: InjectionToken<LogLevel>;
   useValue: LogLevel;
 };
 
-export const withMinLogLevel: WithMinLogLevel = () => {
+type WithMinLogLevel = (onlyErrors: boolean) => MinLogLevelProvider;
+
+export const withMinLogLevel: WithMinLogLevel = (onlyErrors: boolean) => {
   return {
     provide: MIN_LOG_LEVEL,
-    useValue: LogLevel.debug,
+    useValue: onlyErrors ? LogLevel.error : LogLevel.debug,
   };
 };

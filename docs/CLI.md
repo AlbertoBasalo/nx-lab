@@ -158,3 +158,5 @@ EsLint JSON configuration
 npm i -D standard-version
 # "release": "standard-version && git push --follow-tags origin main"
 ```
+
+nx g @schematics/angular:environments --project=activity-bookings

@@ -4,16 +4,22 @@
   "projectType": "application",
   "prefix": "lab",
   "sourceRoot": "activity-bookings/src",
-  "tags": ["type:app"],
+  "tags": [
+    "type:app"
+  ],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/activity-bookings",
         "index": "activity-bookings/src/index.html",
         "browser": "activity-bookings/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "activity-bookings/tsconfig.app.json",
         "assets": [
           "activity-bookings/src/favicon.ico",
@@ -49,7 +55,13 @@
         "development": {
           "optimization": false,
           "extractLicenses": false,
-          "sourceMap": true
+          "sourceMap": true,
+          "fileReplacements": [
+            {
+              "replace": "activity-bookings/src/environments/environment.ts",
+              "with": "activity-bookings/src/environments/environment.development.ts"
+            }
+          ]
         }
       },
       "defaultConfiguration": "production"
@@ -74,7 +86,9 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"]
+      "outputs": [
+        "{options.outputFile}"
+      ]
     },
     "e2e": {
       "executor": "@nx/cypress:cypress",
