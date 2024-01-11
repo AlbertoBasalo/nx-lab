@@ -10,7 +10,10 @@
   "scripts": {
     "lint": "nx run-many --target=lint --all",
     "release": "standard-version && git push --follow-tags origin main",
-    "start": "nx serve activity-bookings",
+    "chrome": "start chrome -incognito -auto-open-devtools-for-tabs http://localhost:4200",
+    "start": "npm run chrome && nx serve activity-bookings",
+    "build": "nx run-many --target=build --all",
+    "http-server": "npx http-server dist/activity-bookings/browser -c-1",
     "test": "nx run-many --target=test --all",
     "test:e2e": "nx e2e activity-bookings",
     "watch": "nx e2e activity-bookings --headed --watch",
